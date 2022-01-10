@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt]{article}           %   A4, pt changes regular font size
+\frenchspacing                                  %   Finnish spacing
+\usepackage{a4wide}                             %   Less margis
+\usepackage[british]{babel}                     %   Edit this to match your language, e.g., finnish
+\usepackage{xcolor}                             %   color support
+    \definecolor{my_grey}{HTML}{7F7F7F}
+\usepackage{icomma}                             %   Better comma in eqs. if used
+\usepackage{hyperref}                           %   Clickable URLs
+\usepackage{siunitx}                            %   Physics unit stuff
+\usepackage{listings}                           %   Better tables
+\usepackage{graphicx}                           %   Figures work
+\usepackage{fontspec}                           %   Better way to handle custom fonts
+\usepackage{amsmath}                            %   Basic math
+\usepackage{esint}                              %   Various fancy integral symbols
+\usepackage[capitalise]{cleveref}               %   \cref better than \ref
+\usepackage[position=top]{subfig}
+    \captionsetup[subfigure]{position=top, labelfont=bf,textfont=normalfont,singlelinecheck=off,justification=raggedright}
+\captionsetup[subfigure]{subrefformat=simple,labelformat=simple,listofformat=subsimple}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+\usepackage{sectsty}                            %   Edit section titles
+    %\allsectionsfont{\normalfont\sffamily}     %   ALL titles use sans-serif
+    \sectionfont{\normalfont\sffamily\LARGE\color{my_grey}} 
+    \subsectionfont{\normalfont\sffamily\large\color{my_grey}} 
+    \subsubsectionfont{\normalfont\sffamily\normalsize\color{my_grey}}
+
+\setmainfont{Linux Libertine O}                 %   Main text font
+%\setmainfont{AdobeTextPro}[                    %   Use Adobe Text if found
+%    Path = fonts/,
+%    Extension =.ttf,
+%    UprightFont = *-Regular,
+%    ItalicFont = *-It,
+%    BoldFont = *-Bold,
+%    BoldItalicFont= *-BoldIt]
+\usepackage[libertine]{newtxmath}               %   Matching math font
+\setsansfont{TeX Gyre Adventor}                 %   Recognisable sans-serif font
+%\setsansfont{URW Gothic L}[                    %   Similar but better sans-serif font if available
+%    Path = fonts/,
+%    Extension =.ttf,
+%    UprightFont = * Regular,
+%    ItalicFont = * Italic,
+%    BoldFont = * Bold,
+%    BoldItalicFont= * Bold Italic]
+\setmonofont{Inconsolata}                       %   code font
+\usepackage{fancyhdr}                           %   Nice header and footer header (and/or footer)
+    \pagestyle{fancy}                               %   Makes package work
+\usepackage[section]{placeins}                  %   Figures stay in declared section
+\usepackage{minted}                             %   Beautiful verbatim code
+    \usemintedstyle{emacs}                          %   code style
+    \setminted{
+        frame=lines,
+        framesep=2mm,
+        baselinestretch=0.9,
+        fontsize=\footnotesize,
+        linenos,
+        breaklines
+    }
+\usepackage{csquotes}                           %   Correct quotes for babel
+\makeatletter                                   %   Force pictures before new subsection
+\AtBeginDocument{%
+  \expandafter\renewcommand\expandafter\subsection\expandafter{%
+    \expandafter\@fb@secFB\subsection
+  }%
+}
+\makeatother
+
+\usepackage[backend=biber,
+            style=ieee,
+            urldate=long,
+            maxnames=5,
+            dateabbrev=false]{biblatex}         %   Citation style with biblatex
+
+\hypersetup{
+    pdfauthor={Niko Savola},                    %   Author here
+}
+
+\linespread{1.1}
+
+
+% Set commonly used math commands here
+\newcommand*{\pd}[3][]{\ensuremath{\frac{\partial^{#1} #2}{\partial #3}}}
+\newcommand*{\dt}[3][]{\ensuremath{\frac{\textrm{d}^{#1} #2}{\textrm{d} #3}}}
+\newcommand{\dbar}{\textrm{d}\hspace*{-0.08em}\bar{}\hspace*{0.1em}}
+\newcommand{\de}{\textrm{d}}
+\newcommand{\sref}[1]{\textbf{\small\subref{#1}}}
+\newcommand{\ve}[1]{\textbf{#1}}
+\newcommand{\e}{\mathrm{e}}
