@@ -1,0 +1,30 @@
+QuoteStyle = Logical
+TabSize = 4
+
+WordDash
+{
+    2
+}
+
+VerbEnvir
+{
+    verbatim comment listing verbatimtab rawhtml errexam picture texdraw
+    filecontents pgfpicture tikzpicture minted lstlisting texttt
+}
+
+WipeArg
+{
+    \label:{} \ref:{} \eqref:{} \vref:{} \pageref:{} \index:[]{}
+    \cite:[][]{} \nocite:{}
+    \input:{} \verbatiminput:[]{} \listinginput:[]{}{}
+    \verbatimtabinput:[]{} \include:{} \includeonly:{}
+    \bibitem:[]{}
+    \cline:{} \cmidrule:[](){}
+    \href:{}{}
+    \setmainfont:*[]{} \setsansfont:*[]{} \setmonofont:*[]{}
+}
+
+CmdLine
+{
+    -n 8 -n 11 -n 38 -n 46
+}
