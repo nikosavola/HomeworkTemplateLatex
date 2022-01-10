@@ -14,7 +14,7 @@ jobs:
           root_file: "main.tex"
           args: -f -shell-escape -interaction=nonstopmode
           latexmk_use_xelatex: true
-          extra_fonts: ./fonts/*.ttf
+          # extra_fonts: ./fonts/*.ttf
       - name: Upload LaTeX document to artifacts
         uses: actions/upload-artifact@v2
         if: always()
