@@ -26,5 +26,5 @@ WipeArg
 
 CmdLine
 {
-    -n 8 -n 11 -n 38 -n 46
+    -n 3 -n 8 -n 11 -n 38 -n 46
 }
