@@ -12,9 +12,11 @@ jobs:
         continue-on-error: true
         with:
           root_file: "main.tex"
+          glob_root_file: false
           args: -f -shell-escape -interaction=nonstopmode
           latexmk_use_xelatex: true
-          # extra_fonts: ./fonts/*.ttf
+          #extra_fonts: ./fonts/*.ttf
+          post_compile: "latexmk -c"
       - name: Upload LaTeX document to artifacts
         uses: actions/upload-artifact@v2
         if: always()

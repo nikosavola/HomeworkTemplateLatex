@@ -6,6 +6,7 @@
     \definecolor{my_grey}{HTML}{7F7F7F}
 \usepackage{icomma}                             %   Better comma in eqs. if used
 \usepackage{hyperref}                           %   Clickable URLs
+\usepackage{booktabs}                           %   Better tables
 \usepackage{siunitx}                            %   Physics unit stuff
 \usepackage{listings}                           %   Better tables
 \usepackage{graphicx}                           %   Figures work
@@ -58,7 +59,7 @@
 \makeatletter                                   %   Force pictures before new subsection
 \AtBeginDocument{%
   \expandafter\renewcommand\expandafter\subsection\expandafter{%
-    \expandafter\@fb@secFB\subsection
+    \expandafter\@fb@secFB\subsection{}
   }%
 }
 \makeatother
