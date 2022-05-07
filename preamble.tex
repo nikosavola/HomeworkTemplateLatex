@@ -69,6 +69,13 @@
             urldate=long,
             maxnames=5,
             dateabbrev=false]{biblatex}         %   Citation style with biblatex
+\DeclareSourcemap{                              %   No ISSN for journals
+    \maps[datatype=bibtex]{
+        \map{
+        \step[fieldset=issn, null]
+        }
+    }
+}
 
 \hypersetup{
     pdfauthor={Niko Savola},                    %   Author here
