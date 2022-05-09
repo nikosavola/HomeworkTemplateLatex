@@ -77,6 +77,17 @@
         }
     }
 }
+\renewbibmacro*{doi+eprint+url}{                %   Print URL iff no doi
+    \printfield{doi}
+    \newunit\newblock
+    \iftoggle{bbx:eprint}{
+        \usebibmacro{eprint}
+    }{}
+    \newunit\newblock
+    \iffieldundef{doi}{
+        \usebibmacro{url+urldate}}
+        {}
+}
 
 \hypersetup{
     pdfauthor={Niko Savola},                    %   Author here
