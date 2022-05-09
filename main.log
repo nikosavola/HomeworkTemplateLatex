@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.5.1)  7 MAY 2022 15:15
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.5.1)  9 MAY 2022 10:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -696,7 +696,7 @@ ex-text;"
 For immediate help type H <return>.
  ...                                              
                                                   
-l.45 \usepackage
+l.46 \usepackage
                 {fancyhdr}                           %   Nice header and foo...
 
 
@@ -724,7 +724,7 @@ Package fontspec Info: Could not resolve font "Inconsolata/I" (it probably
 For immediate help type H <return>.
  ...                                              
                                                   
-l.45 \usepackage
+l.46 \usepackage
                 {fancyhdr}                           %   Nice header and foo...
 
 
@@ -740,7 +740,7 @@ A font might not be found for many reasons.
 For immediate help type H <return>.
  ...                                              
                                                   
-l.45 \usepackage
+l.46 \usepackage
                 {fancyhdr}                           %   Nice header and foo...
 
 
@@ -1343,7 +1343,7 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 LaTeX Warning: Empty bibliography on input line 42.
 
 
-Package caption Warning: Unused \captionsetup[subfigure] on input line 18.
+Package caption Warning: Unused \captionsetup[subfigure] on input line 19.
 See the caption package documentation for explanation.
 
 (./main.aux)
@@ -1359,7 +1359,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  34165 strings out of 476143
  699976 string characters out of 5810533
- 1509481 words of memory out of 5000000
+ 1509528 words of memory out of 5000000
  54514 multiletter control sequences out of 15000+600000
  479919 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
