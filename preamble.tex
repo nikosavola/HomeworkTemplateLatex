@@ -57,14 +57,6 @@
         breaklines
     }
 \usepackage{csquotes}                           %   Correct quotes for babel
-\makeatletter                                   %   Force pictures before new subsection
-\AtBeginDocument{%
-  \expandafter\renewcommand\expandafter\subsection\expandafter{%
-    \expandafter\@fb@secFB\subsection{}
-  }%
-}
-\makeatother
-
 \usepackage[backend=biber,
             style=ieee,
             urldate=long,
